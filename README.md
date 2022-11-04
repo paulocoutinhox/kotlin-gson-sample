@@ -4,7 +4,7 @@
 
 **THE PROBLEM DESCRIBED HERE WAS SOLVED, BUT I WILL KEEP THIS PROJECT HERE TO HELP OTHERS**
 
-### Problem
+## Problem
 
 Im trying to decode a `JSON` string with `reified` type passed to a serializer interface.
 
