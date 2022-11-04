@@ -2,6 +2,10 @@
 
 [![Kotlin](https://github.com/paulocoutinhox/kotlin-gson-sample/actions/workflows/kotlin.yml/badge.svg)](https://github.com/paulocoutinhox/kotlin-gson-sample/actions/workflows/kotlin.yml)
 
+**THE PROBLEM DESCRIBED HERE WAS SOLVED, BUT I WILL KEEP THIS PROJECT HERE TO HELP OTHERS**
+
+### Problem
+
 Im trying to decode a `JSON` string with `reified` type passed to a serializer interface.
 
 The `expected` return value is the expected type passed as `generic`.
