@@ -31,3 +31,7 @@ How to run:
 ```bash
 make run
 ```
+
+StackOverflow:
+
+https://stackoverflow.com/questions/74311525/how-to-decode-json-data-with-reified-generics-interface-and-kotlin
