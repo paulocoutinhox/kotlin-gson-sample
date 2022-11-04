@@ -1,5 +1,7 @@
 # Kotlin Sample With GSON
 
+[![Kotlin](https://github.com/paulocoutinhox/kotlin-gson-sample/actions/workflows/kotlin.yml/badge.svg)](https://github.com/paulocoutinhox/kotlin-gson-sample/actions/workflows/kotlin.yml)
+
 Im trying to decode a JSON string with reitified type passed to a serializer interface.
 
 The expected return value is the expected type passed as generic.
