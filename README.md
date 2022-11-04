@@ -2,11 +2,11 @@
 
 [![Kotlin](https://github.com/paulocoutinhox/kotlin-gson-sample/actions/workflows/kotlin.yml/badge.svg)](https://github.com/paulocoutinhox/kotlin-gson-sample/actions/workflows/kotlin.yml)
 
-Im trying to decode a JSON string with reitified type passed to a serializer interface.
+Im trying to decode a `JSON` string with `reified` type passed to a serializer interface.
 
-The expected return value is the expected type passed as generic.
+The `expected` return value is the expected type passed as `generic`.
 
-The error is when decode happen, GSON library convert it to `LinkedTreeMap` instead of the type passed.
+The error is when decode happen, `GSON` library convert it to `LinkedTreeMap` instead of the type passed.
 
 The main file with sample is here: [src/main/kotlin/Main.kt](src/main/kotlin/Main.kt)
 
