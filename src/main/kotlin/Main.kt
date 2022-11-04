@@ -8,9 +8,9 @@ interface Serializer {
 class JsonSerializer : Serializer {
     override fun <T> decodeValue(data: String): T? {
         try {
-            val type = object : TypeToken<T>() {}.type
+            val type = object : TypeToken<Request<T>>() {}.type
             val gson = Gson()
-            return gson.fromJson<T>(data, type)
+            return gson.fromJson<Request<T>>(data, type).r
         } catch (e: Exception) {
             println("Error when parse: ${e.message}")
         }
@@ -23,11 +23,10 @@ class Request<T>(val r: T)
 
 inline fun <reified T> callSerializer(json: String): T? {
     val serializer = JsonSerializer()
-    val decoded = serializer.decodeValue<Request<T>>(json)
-    return decoded?.r
+    return serializer.decodeValue<T>(json)
 }
 
 fun main() {
-    val finalValue = callSerializer<Request<String>>("{\"r\": \"test\"}")
-    println("Decoded data is: $finalValue")
+    val result = callSerializer<String>("{\"r\": \"test\"}")
+    println("Decoded data is: $result")
 }
